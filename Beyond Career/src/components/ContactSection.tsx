@@ -41,9 +41,9 @@ export default function ContactSection() {
       <div className="contact-grid">
         {/* Contact Form */}
         <form className="contact-form" onSubmit={handleSubmit}>
-          <input type="text" placeholder="Your Name" value={form.name} required onChange={handleInputs}/>
-          <input type="email" placeholder="Your Email" value={form.email} required onChange={handleInputs}/>
-          <textarea placeholder="Your Message"  required value={form.message} onChange={handleInputs}></textarea>
+          <input type="text" name="name" placeholder="Your Name" value={form.name} required onChange={handleInputs}/>
+          <input type="email" name="email" placeholder="Your Email" value={form.email} required onChange={handleInputs}/>
+          <textarea name="message" placeholder="Your Message"  required value={form.message} onChange={handleInputs}></textarea>
           <button type="submit">Send Message</button>
         </form>
 
