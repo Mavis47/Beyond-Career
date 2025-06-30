@@ -1,0 +1,205 @@
+.about-section {
+  padding: 60px 20px;
+  background: #f5f7fa;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  background: url("carrer.jpg");
+}
+
+.about-content {
+  max-width: 1000px;
+  text-align: center;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #8aa2f5;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.about-content h3 {
+   margin-top: 30px;
+    font-size: 2.8rem;
+    color: #fafafa;
+    font-weight: bolder;
+}
+
+.about-content p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  line-height: 1.6;
+  color: antiquewhite;
+}
+
+.core-values ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.core-values li {
+  background: white;
+  padding: 12px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-size: 1rem;
+  transition: transform 0.3s;
+}
+
+.core-values li:hover {
+  transform: scale(1.05);
+}
+
+
+.mission-vision{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+    border-radius: 13px;
+    height: 266px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.tags{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+
+/* h2 animation effect */
+
+@keyframes lights {
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+  30% { 
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  40% { 
+    color: hsl(230, 100%, 95%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+}
+
+body {
+  font: 100% / 1.5 Raleway, sans-serif;
+  color: hsl(230, 100%, 95%);
+  background: linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%));
+  display: flex;
+}
+
+h2 {
+  margin: auto;
+  font-size: 3.5rem;
+  font-weight: 300;
+  animation: lights 5s 750ms linear infinite;
+}
+
+/* ────────────────────────────────
+   ✅ Responsive Design
+──────────────────────────────── */
+@media (max-width: 768px) {
+  .mission-vision {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  .about-section h2 {
+    font-size: 2rem;
+  }
+
+  .career-heading {
+    font-size: 1.3rem;
+  }
+
+  .card p,
+  .tags {
+    font-size: 0.95rem;
+  }
+
+  .core-values h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 60px 16px;
+  }
+
+  .about-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .career-heading {
+    font-size: 1.1rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .tags {
+    font-size: 0.9rem;
+  }
+
+  .core-values{
+        margin-top: 55px;
+  }
+}
