@@ -19,7 +19,7 @@ export default function ContactSection() {
         <div className="contact-info">
           <h3>Our Info</h3>
           <p>📍 IIT Kharagpur, India</p>
-          <p>📞 +91 98765 43210</p>
+          <p>📞 +917859027046</p>
           <p>✉️ contact@beyondcareer.in</p>
 
           <div className="social-links">
