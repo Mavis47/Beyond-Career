@@ -15,8 +15,8 @@ export default function ContactSection() {
 
   // Form validation using zod
   const handleInputs = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    e.preventDefault();
-    setform({...form,[e.target.value]: e.target.value});
+    const { name, value } = e.target;
+    setform({ ...form, [name]: value });
   }
 
   const handleSubmit = (e: React.FormEvent) => {
