@@ -19,7 +19,7 @@ export default function HeroSection() {
       </div>
       <div className="hero-background">
         <video autoPlay muted loop playsInline className="hero-video">
-          <source src="/hero.mp4" type="video/mp4" />
+          <source src="/assets/hero.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
