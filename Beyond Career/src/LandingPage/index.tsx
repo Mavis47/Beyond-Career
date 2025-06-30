@@ -13,7 +13,7 @@ export default function LandingPage() {
     <div className="landing-page">
       <div className="video-background">
         <video autoPlay muted loop playsInline>
-          <source src="assets/hero.mp4" type="video/mp4" />
+          <source src="/assets/hero.mp4" type="video/mp4" />
         </video>
       </div>
 
