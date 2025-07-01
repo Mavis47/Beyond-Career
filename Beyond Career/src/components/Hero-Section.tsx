@@ -4,8 +4,6 @@ export default function HeroSection() {
 
   return (
     <div className="hero-section" id="home">
-      
-
       <div className="hero-content">
         <h1 className="heading-one">Redefining Career Journeys for Students</h1>
         <p className="paragraph-header">At Beyond Career, we're bridging the gap between ambition and opportunity.Get expert and —   <br />
