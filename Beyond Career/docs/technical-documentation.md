@@ -52,3 +52,26 @@ Configuration:
 <Tilt>
   <div className="card">Interactive Card</div>
 </Tilt>
+
+🔧 Deployment Process (Vercel)
+Steps followed to deploy Beyond Career on Vercel:
+
+Pushed the complete React project to a public GitHub repository:
+🔗 https://github.com/Mavis47/Beyond-Career
+
+Logged into Vercel using GitHub authentication.
+
+Imported the GitHub repository by clicking “Add New Project” → Selected the Beyond Career repo.
+
+Vercel automatically detected the React framework and applied default build settings:
+
+Framework: React
+Build Command: npm run build
+
+Clicked “Deploy” – the site was automatically built and hosted.
+
+Final Live URL:
+🌐 https://beyond-career-flame.vercel.app
+
+For future changes, commits to the master branch automatically trigger redeployment.
+
